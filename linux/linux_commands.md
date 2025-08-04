@@ -1,25 +1,42 @@
--uname
+# Shell commands
+
 Checks the OS name
--uname --help
+```
+-uname
+```
 OS info
--whoami
+
+```
+-uname --help
+```
+
 User info
--exit
+-whoami
+
 Exits the instance connection
--cat /etc/shells
+-exit
+
 Shells avaliable
--history
+-cat /etc/shells
+
 Shows command history
--curl (used for transfer of data)
+-history
+
 Pass in a link will get the img
+-curl (used for transfer of data)
+
 Requires a file to save as (--output file.name)
 -wget (same as curl)
+
 Instead of --output, -O
 -file file.name
+
 Shows info about the file
 -mv file.name file.rename
+
 Renames file
 -rm file.name
+
 Deletes file
 -rm -r folder.name
 Deletes folder
