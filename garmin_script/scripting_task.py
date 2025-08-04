@@ -10,26 +10,21 @@ load_dotenv()
 email = os.getenv("GC_EMAIL")
 password = os.getenv("GC_PASSWORD")
 
-def get_last_activity():
-    try:
-        client = Garmin(email, password)
-        client.login()
-        # Get activity info
-        activity = client.get_last_activity()
+try:
+    client = Garmin(email, password)
+    client.login()
 
-        # Selected fields
-        activity_data = (
-            f"Activity Name: {activity.get('activityName')}\n"
-            f"Start Time: {activity.get('startTimeLocal', 'N/A')}\n"
-            f"Distance (km): {activity.get('distance')}\n"
-            f"Duration (min): {activity.get('duration')}\n"
-            f"Calories: {activity.get('calories')}\n"
-            f"Average Heart Rate: {activity.get('averageHR')}\n"
-        )
+    # Get activity info
+    activity = client.get_last_activity()
 
-        print(activity_data)
+    # Print selected fields
+    print("\n")
+    print(f"Activity Name: {activity.get('activityName')}")
+    print(f"Start Time: {activity.get('startTimeLocal', 'N/A')}")
+    print(f"Distance (km): {activity.get('distance') / 1000:.2f}")
+    print(f"Duration (min): {activity.get('duration') / 60:.2f}")
+    print(f"Calories: {activity.get('calories')}")
+    print(f"Average Heart Rate: {activity.get('averageHR')}")
 
-    except GarminConnectAuthenticationError:
-        print("Authentication error")
-
-get_last_activity()
+except GarminConnectAuthenticationError:
+    print("Authentication error")
