@@ -38,7 +38,7 @@
 
 ### IAAS - Infrastructure as a Service
 - Tend to start with this one
-- Renting a server
+- Renting hardware, leave everything else to us
 - AWS, GCP
 
 ### PAAS - Platform as a Service

@@ -17,9 +17,9 @@ ps -u user.name
 
 ---
 
-## List System Processes (Scheduled tasks)
+## List System Processes (Scheduled tasks, background processes)
 ```
-ps -ed pid, ppid, cmd, uid --sort=uid
+ps -A, ps -e
 ```
 
 ---
@@ -36,13 +36,17 @@ pstree or ps -ejH
 
 ## Run a process in the Background
 - Apply & to the command
+- Sleep creates a process
 ```
 sleep 60 &
+
+jobs -l, shows the background proceses
 ```
 - Provides a PID (Process ID)
 - Job number e.g.[5]
 - [1] 12345
 - Notified when the process is completed
+
 
 ---
 
@@ -140,3 +144,11 @@ chmod 760 file.name or chmod o-w file.name
 ```
 chmod 767 file.name or chmod o+rwx
 ```
+
+---
+
+## Wildcards
+- There are three basic wildcards:
+- '*' allow zero or more characters of any type e.g. *example
+- ? allow any single character
+- [] allow a range of characters
