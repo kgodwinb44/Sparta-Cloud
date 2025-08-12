@@ -7,7 +7,7 @@
 ![](/images/aws_services.PNG)
 
 ### 2 - Application and OS Images (AMI)
-- An image provides the software required to set up and boots an instance
+- An image provides the software required to set up and boot an instance
 - e.g. Ubuntu, Windows, macOS
 - Way to connect the instance using ssh
 

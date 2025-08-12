@@ -39,23 +39,25 @@
 ### IAAS - Infrastructure as a Service
 - Tend to start with this one
 - Renting hardware, leave everything else to us
-- AWS, GCP
+- AWS EC2, GCE, Microsoft Azure
 
 ### PAAS - Platform as a Service
-- Renting a environment
+- Provides framework, software and tools
 - We build the code, just need to platform
-- Pycharm, IDE's
+- Github, Docker, Kubernetes
 
 ### SAAS - Software as a Service
-- Renting a software
-- Office 365, GitHub, Collab 
+- Provides software over the internet
+- Full package
+- Office 365, Trello
 
 ### FAAS - Functions of a Service
 - 1 off function (adhoc)
 - No dedicated server
 - Just run this thing, don't care where you do
+- GC functions, MZ functions
 
-![](images/cloud_services.PNG)
+![](/images/cloud_services.PNG)
 
 ---
 
@@ -104,6 +106,8 @@
 ### Services you dont pay for
 - Inbound data transfer
 - Open source tools
+
+---
 
 ## Payment Methods
 

@@ -8,10 +8,17 @@
 ---
 
 ## Key-Characteristics
-- Kernal based (Linux Kernal is the core part of the OS)
+- Strong security
 - Open Source (Anyone can view, modify the code)
-- Mult-user & Multitasking (Multiple users can work simultainousely)
-- Unix like (Same design principles a Unix)
+- Mult-user & Multitasking (Multiple users can work simultaneously)
+- Extensive customisation options due to the raw interaction with the kernel
+
+---
+
+## Why not to use
+- Complex nature
+- Smaller software eco-system in comparison to Windows
+
 
 ![](../images/linux_key.PNG)
 
